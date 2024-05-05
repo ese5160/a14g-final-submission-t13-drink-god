@@ -16,7 +16,7 @@ Our project is an IOT automatic beverage machine called Drink God. The device is
 ### Inspiration  
 In daily life, people need to drink water or beverages every day. Motivated by the idea of wanting to realize a more convenient way to get drinks while keeping track of one's drinking habits, this project was started.  
 ### Device Functionality   
-The Drink God project is an advanced IoT automatic beverage machine, which utilizes a complex array of sensors and actuators integrated with the SAMD25 microcontroller serving as the brain of the device. It features an ultrasonic distance sensor HC-SR04 to monitor the drink level and prevent spillage, and a temperature sensor MCP 9080 to ensure drinks are served at the optimal temperature by adding ice if necessary. The device operates pumps via relays to transfer beverages and controls servo motors to show the working state. Connectivity is managed by the WINC1500 Wi-Fi Chip, handling network interactions including connection, authentication, and communication with a mobile app. This allows users to select their preferred beverages seamlessly through a user-friendly interface. The device is designed to prevent overfills and adjust drink temperature automatically, enhancing user convenience. Drink choices and consumption statistics are displayed on the NODE-RED UI interface, making it easy for users to track and manage their consumption. The project leverages essential electronics concepts such as timers, interrupts, analog-to-digital conversion (ADC), and I2C communication, ensuring a sophisticated and efficient operation.  
+The Drink God project is an advanced IoT automatic beverage machine, which utilizes a complex array of sensors and actuators integrated with the SAMD25 microcontroller serving as the brain of the device. It features an ultrasonic distance sensor HC-SR04 to monitor the drink level and prevent spillage, and a temperature sensor MCP 9808 to ensure drinks are served at the optimal temperature by adding ice if necessary. The device operates pumps via relays to transfer beverages and controls servo motors to show the working state. Connectivity is managed by the WINC1500 Wi-Fi Chip, handling network interactions including connection, authentication, and communication with a mobile app. This allows users to select their preferred beverages seamlessly through a user-friendly interface. The device is designed to prevent overfills and adjust drink temperature automatically, enhancing user convenience. Drink choices and consumption statistics are displayed on the NODE-RED UI interface, making it easy for users to track and manage their consumption. The project leverages essential electronics concepts such as timers, interrupts, analog-to-digital conversion (ADC), and I2C communication, ensuring a sophisticated and efficient operation.  
 ### Challenges  
 The biggest challenge we encountered in this project was to write drivers for each sensor, because we couldn't use the written libraries directly, we needed to make these sensors work in our own freertos environment, so we needed to refine the .c and .h files for these sensors ourselves.  
 In order to overcome this problem, we carefully read the datasheet of every sensor we used and also scrutinized the structure of our freertos, and with perseverance, made every sensor work properly.  
@@ -35,10 +35,42 @@ Health-Conscious Options: Offer settings that adjust recipes according to dietar
 Customizable Skins and Accessories: Offer customizable options for the machine’s exterior design to cater to different aesthetic preferences or kitchen decors.
 Expanded Beverage Options: Continuously expand the range of beverage options available, potentially collaborating with beverage companies to offer branded and specialty drinks.  
 ### Takeaways from ESE5160  
-
+Through the course ESE5160, we learned how to design custom PCB, how to use freertos, how to use CLI commands, and how to write driver to sensors.  
 ### Project Links  
 
-
 ## 3. Hardware & Software Requirements
-
+### Planned hardware features:  
+HRS 01 – Project shall be based on SAMD21 microcontroller and WINC1500 Wi-Fi Chip.  
+HRS 02 – Ultrasonic distance sensor HC-SR04 shall be used to measure distance. In this project the sensor was used to measure the height of the beverage surface.  
+HRS 03 – The temperature sensor MCP9808 shall be used to measure the temperature of the beverage. In this project, the value recorded by the temperature sensor is used to determine whether the beverage needs to be iced.  
+HRS 04 – SSD1306 OLED display shall be used for user interface.  
+HRS 05 – The relay module receives control signals from the MCU to control the operation of the water pump, which is used to add drinks.  
+HRS 06 – The servo motor SG90 in this device can be used to control whether or not to add ice to the drink.  
+HRS 07 – The motor driver DRV2605LDGSR shall be used to control motor operation.  
+### Function implementation:  
+HRS 01: The project was successfully carried out based on the SAMD21 microcontroller and WINC1500 Wi-Fi Chip, and realized the control of the actuator through the return value of the sensor.  
+HRS 02: The HCSR04 distance sensor can be successfully used to read the distance value and provide real-time feedback on the liquid level.  
+HRS 03: The MCP9808 temperature sensor can be successfully used to read the temperature value, and because the MCP9808 is finally placed on the PCB, its function is modified to provide real-time feedback on the ambient temperature.  
+HRS 04: Due to a problem in distributing the PCB output pins, the function of OLED was not realized. We output the feedback data through the Node-red UI interface.  
+HRS 05: According to the feedback value of the distance sensor, the pump can be successfully controlled by controlling the relay module by enabling the PIN.  
+HRS 06: The SG90 servo motor can also be successfully controlled by enabling the output pin.  
+HRS 07: In this project, it was ultimately not used.  
+### Planned software features:  
+SRS 01 - The SAMD21 microcontroller shall transmit sensor data to WINC1500 Wi-Fi Chip via SPI at predefined intervals.  
+SRS 02 - WINC1500 Wi-Fi Chip shall send the sensor data to the mobile app for real-time display on the user’s device.  
+SRS 03 - The system shall monitor temperature with the MCP9808 sensor, reading data everysecond and outputting it through I2C.  
+SRS 04 - The system shall monitor the distance between the users and Drink God via ultrasonic distance sensor HC-SR04, and communicating SAMD21 with UART. When the distance is less than a threshold, Drink God will provide drinks.  
+SRS 05 - The system shall display sensor readings on an OLED, updated periodically.  
+SRS 06 - The user shall be able to select the kind of drinks through a mobile app.  
+SRS 07 - The SAMD21 microcontroller control DRV2605LDGSR motor driver by I2C in order to provide drinks.  
+SRS 08 - All the sensors and other modules are controlled by the program in the SAMD21 microcontroller.  
+### Function implementation:  
+SRS 01: The project was successfully carried out based on the SAMD21 microcontroller and WINC1500 Wi-Fi Chip, and realized the control of the actuator through the return value of the sensor.  
+SRS 02: By using the WINC1500 Wi-Fi module, you can successfully control the device from the mobile device and return the value to the mobile device.  
+SRS 03: Through I2C transmission protocol, the measured value of MCP9808 can be obtained successfully.  
+SRS 04: The measurement of HCSR04 can be obtained successfully through the UART transport protocol.  
+SRS 05: The use of OLeds is not implemented.  
+SRS 06: By using node-red, it is possible to use mobile devices to make different pumps work and thus obtain different drinks.  
+SRS 07: The pump is not controlled by controlling the motor driver, but by enabling the relay module to control the work of the pump.  
+SRS 08: All sensors and actuators can be successfully controlled through the MCU.  
 ## 4. Project Photos & Screenshots
