@@ -74,3 +74,19 @@ SRS 06: By using node-red, it is possible to use mobile devices to make differen
 SRS 07: The pump is not controlled by controlling the motor driver, but by enabling the relay module to control the work of the pump.  
 SRS 08: All sensors and actuators can be successfully controlled through the MCU.  
 ## 4. Project Photos & Screenshots
+### 3D prints
+This is one from 3D print: ![9ccd1d24831b740c21efea24f2f21f1](https://github.com/ese5160/a14g-final-submission-t13-drink-god/assets/87221660/d387b932-6357-42d8-8b44-d175feac22c3)  
+However, it is found that the size is so small that we can not put our sensors and PCB board in it. So we made one by our hand. (It can be used normally and it worked well in demo day): ![28dd267305136ff7801cf340596eace](https://github.com/ese5160/a14g-final-submission-t13-drink-god/assets/87221660/2bd30891-dd92-432f-9c63-796257cff672)
+
+The standalone PCBA, top: ![2](https://github.com/ese5160/a14g-final-submission-t13-drink-god/assets/87221660/ee38c55c-a045-42d6-9c70-ac1e3901e006)  
+
+The standalone PCBA, bottom: ![1](https://github.com/ese5160/a14g-final-submission-t13-drink-god/assets/87221660/1e1538c5-bde8-4595-9a48-b4603ff17359)
+
+Thermal camera images while the board is running under load: ![image](https://github.com/ese5160/a14g-final-submission-t13-drink-god/assets/87221660/7fc56b88-e064-444c-9b6c-1345b74811b3)
+
+The Altium Board design in 2D view (screenshot): ![c19f04b18d9bd787d1646373804a0d0](https://github.com/ese5160/a14g-final-submission-t13-drink-god/assets/87221660/e4f4df49-5b53-4743-98f6-de88816764f0)  
+
+The Altium Board design in 3D view (screenshot): ![c9cf192f6b7dea9cc085652bd31a1fd](https://github.com/ese5160/a14g-final-submission-t13-drink-god/assets/87221660/98bfecc1-45b1-433c-be48-bf664ff5ef7e)  
+![b783e3d7b9fcdffbf450ec02abfa270](https://github.com/ese5160/a14g-final-submission-t13-drink-god/assets/87221660/0d7ba6c7-35fb-4d1e-9196-d54e856f49bc)  
+
+
