@@ -90,4 +90,4 @@ The Altium Board design in 3D view (screenshot): ![c9cf192f6b7dea9cc085652bd31a1
 ![b783e3d7b9fcdffbf450ec02abfa270](https://github.com/ese5160/a14g-final-submission-t13-drink-god/assets/87221660/0d7ba6c7-35fb-4d1e-9196-d54e856f49bc)  
 
 ## 5. A12G Codebase
-All the code is shown in: https://github.com/ese5160/a12g-firmware-drivers-t13-drink-god/blob/8808a773dc6873d1049dcacce21018b73d383078/ESE516Final.zip 
+All the codes are shown in (It is the same as before): https://github.com/ese5160/a12g-firmware-drivers-t13-drink-god/blob/8808a773dc6873d1049dcacce21018b73d383078/ESE516Final.zip 
