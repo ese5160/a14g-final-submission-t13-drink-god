@@ -82,7 +82,7 @@ The standalone PCBA, top: ![2](https://github.com/ese5160/a14g-final-submission-
 
 The standalone PCBA, bottom: ![1](https://github.com/ese5160/a14g-final-submission-t13-drink-god/assets/87221660/1e1538c5-bde8-4595-9a48-b4603ff17359)
 
-Thermal camera images while the board is running under load: ![image](https://github.com/ese5160/a14g-final-submission-t13-drink-god/assets/87221660/7fc56b88-e064-444c-9b6c-1345b74811b3)
+Thermal camera images while the board is running under load: ![image](https://github.com/ese5160/a14g-final-submission-t13-drink-god/assets/87221660/7fc56b88-e064-444c-9b6c-1345b74811b3)  
 
 The Altium Board design in 2D view (screenshot): ![c19f04b18d9bd787d1646373804a0d0](https://github.com/ese5160/a14g-final-submission-t13-drink-god/assets/87221660/e4f4df49-5b53-4743-98f6-de88816764f0)  
 
