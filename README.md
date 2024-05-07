@@ -37,7 +37,7 @@ Expanded Beverage Options: Continuously expand the range of beverage options ava
 ### Takeaways from ESE5160  
 Through the course ESE5160, we learned how to design custom PCB, how to use freertos, how to use CLI commands, and how to write driver to sensors.  
 ### Project Links  
-
+Link to your final PCBA on Altium 365: https://upenn-eselabs.365.altium.com/designs/A984600D-580C-470D-BB41-1C56840180C3#design  
 ## 3. Hardware & Software Requirements
 ### Planned hardware features:  
 HRS 01 – Project shall be based on SAMD21 microcontroller and WINC1500 Wi-Fi Chip.  
