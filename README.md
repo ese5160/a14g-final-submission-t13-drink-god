@@ -8,7 +8,7 @@
     * Description of test hardware: (development boards, sensors, actuators, laptop + OS, etc) 
 
 ## 1. Video Presentation
-### Video Link:  
+### Video Link: https://drive.google.com/file/d/1ydrR2BuqvclqR9ZWK_gxwQd7aG0sl-bE/view?usp=drive_link  
 
 ## 2. Project Summary
 ### Device Description  
