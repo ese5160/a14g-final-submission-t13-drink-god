@@ -98,6 +98,7 @@ Node-RED dashboard: ![31819be3702f628342f79018ecb5124](https://github.com/ese516
 
 Node-RED backend: ![15e6b8908dc7e137688def7b70055a3](https://github.com/ese5160/a14g-final-submission-t13-drink-god/assets/87221660/29b97a10-72eb-4c2e-9680-ede1c34e485c)
 
-Block diagram of your system: 
+Block diagram of your system: ![A14G](https://github.com/ese5160/a14g-final-submission-t13-drink-god/assets/87221660/a616a942-644c-430d-906f-3dac7ce283ff)  
+
 ## 5. A12G Codebase
 All the codes are shown in (It is the same as before): https://github.com/ese5160/a12g-firmware-drivers-t13-drink-god/blob/8808a773dc6873d1049dcacce21018b73d383078/ESE516Final.zip 
