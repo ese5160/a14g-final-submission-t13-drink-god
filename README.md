@@ -37,7 +37,11 @@ Expanded Beverage Options: Continuously expand the range of beverage options ava
 ### Takeaways from ESE5160  
 Through the course ESE5160, we learned how to design custom PCB, how to use freertos, how to use CLI commands, and how to write driver to sensors.  
 ### Project Links  
-Link to your final PCBA on Altium 365: https://upenn-eselabs.365.altium.com/designs/A984600D-580C-470D-BB41-1C56840180C3#design  
+Link to final code: https://github.com/ese5160/a12g-firmware-drivers-t13-drink-god/blob/8808a773dc6873d1049dcacce21018b73d383078/ESE516Final.zip  
+Link to Node-RED dashboard code(The latest version of node-red could not be exported due to the VM being shut down, as we have successfully demonstrated on DEMO day.): https://github.com/ese5160/a10g-cloud-t13-drink-god/blob/c9f9968850e1ba79861dadd41687125dc3a1c840/DrinkGod.json  
+Link to final PCBA on Altium 365: https://upenn-eselabs.365.altium.com/designs/A984600D-580C-470D-BB41-1C56840180C3#design  
+
+
 ## 3. Hardware & Software Requirements
 ### Planned hardware features:  
 HRS 01 – Project shall be based on SAMD21 microcontroller and WINC1500 Wi-Fi Chip.  
