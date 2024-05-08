@@ -3,7 +3,7 @@
 
     * Team Number: 13
     * Team Name: Drink God
-    * Team Members: 
+    * Team Members: Haige Xu & Xinyuan Jin
     * Github Repository URL: https://github.com/ese5160/a14g-final-submission-t13-drink-god.git
     * Description of test hardware: (development boards, sensors, actuators, laptop + OS, etc) 
 
